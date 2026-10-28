@@ -205,3 +205,5 @@ form .btn { margin-top: 0.5rem; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* end of styles */
