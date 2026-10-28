@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cosmos Nearby — Astronomy Lecture Hall</title>
+  <meta name="description" content="Open astronomy lectures, speaker lineup and electronic tickets.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Theme selector: pure CSS, state lives in this checkbox (checked = light theme) -->
+  <input type="checkbox" id="theme-toggle" class="visually-hidden" aria-label="Switch to light theme">
+  <!-- Burger state: pure CSS -->
+  <input type="checkbox" id="menu-toggle" class="visually-hidden" aria-label="Open menu">
+
+  <header class="site-header">
+    <a class="logo" href="#top">Cosmos Nearby</a>
+    <label class="burger" for="menu-toggle" aria-hidden="true"><span></span><span></span><span></span></label>
+    <nav class="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="#playbill">Playbill</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#podcasts">Podcasts</a></li>
+      </ul>
+      <a class="btn btn-accent" href="#playbill">Buy a Ticket</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Simply About the Structure of the Universe</h1>
+      <p>Open lectures by working astronomers. Come in person or join the live broadcast.</p>
+      <a class="btn btn-accent btn-large" href="#playbill">See the schedule</a>
+    </section>
+
+    <section class="schedule" id="playbill" aria-labelledby="playbill-title">
+      <h2 id="playbill-title">Playbill</h2>
+      <div class="grid">
+        <article class="card">
+          <time datetime="2026-11-07T18:00">7 Nov, 18:00</time>
+          <h3>How Stars Are Born in Cold Gas Clouds</h3>
+          <p class="speaker">Dr. Aigerim Sadykova, PhD in Astrophysics</p>
+          <p class="seats seats-ok">42 seats left</p>
+        </article>
+        <article class="card">
+          <time datetime="2026-11-14T19:00">14 Nov, 19:00</time>
+          <h3>Black Holes: What Happens at the Edge</h3>
+          <p class="speaker">Prof. Timur Nurlanov, DSc in Physics</p>
+          <p class="seats seats-low">Only 6 seats left</p>
+        </article>
+        <article class="card">
+          <time datetime="2026-11-21T18:30">21 Nov, 18:30</time>
+          <h3>Exoplanets: Searching for Another Earth</h3>
+          <p class="speaker">Dr. Dana Kenzhebayeva, PhD in Planetary Science</p>
+          <p class="seats seats-ok">28 seats left</p>
+        </article>
+        <article class="card">
+          <time datetime="2026-11-28T17:00">28 Nov, 17:00</time>
+          <h3>Dark Matter and the Shape of the Cosmos</h3>
+          <p class="speaker">Prof. Arman Bekov, DSc in Cosmology</p>
+          <p class="seats seats-out">Sold out</p>
+        </article>
+        <article class="card">
+          <time datetime="2026-12-05T19:00">5 Dec, 19:00</time>
+          <h3>Reading the Sky with Radio Telescopes</h3>
+          <p class="speaker">Dr. Madina Omarova, PhD in Radio Astronomy</p>
+          <p class="seats seats-ok">60 seats left</p>
+        </article>
+        <article class="card">
+          <time datetime="2026-12-12T18:00">12 Dec, 18:00</time>
+          <h3>The Sun: Our Nearest Star Up Close</h3>
+          <p class="speaker">Dr. Yerlan Tuleuov, PhD in Solar Physics</p>
+          <p class="seats seats-low">Only 9 seats left</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="speakers" id="speakers" aria-labelledby="speakers-title">
+      <h2 id="speakers-title">Speakers</h2>
+      <p>Six researchers from partner observatories take the stage this season. Each lecture ends with open questions from the audience.</p>
+    </section>
+
+    <section class="podcasts" id="podcasts" aria-labelledby="podcasts-title">
+      <h2 id="podcasts-title">Podcasts</h2>
+      <p>Missed a lecture? Recordings appear here within a week after the event.</p>
+    </section>
+
+    <section class="register" id="register" aria-labelledby="register-title">
+      <h2 id="register-title">Register for the online broadcast</h2>
+      <form action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required minlength="2">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+
+        <label for="phone">Phone (optional)</label>
+        <input type="tel" id="phone" name="phone" placeholder="+7 700 000 00 00" autocomplete="tel" pattern="[+0-9 ()\-]{7,20}">
+
+        <button type="submit" class="btn btn-accent">Save my seat</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Partners and social media">
+      <ul>
+        <li><a href="https://www.fesenkov.kz" rel="noopener">Fesenkov Astrophysical Institute</a></li>
+        <li><a href="https://www.esa.int" rel="noopener">ESA</a></li>
+        <li><a href="https://www.nasa.gov" rel="noopener">NASA</a></li>
+        <li><a href="https://t.me" rel="noopener">Telegram</a></li>
+        <li><a href="https://instagram.com" rel="noopener">Instagram</a></li>
+        <li><a href="https://youtube.com" rel="noopener">YouTube</a></li>
+      </ul>
+    </nav>
+    <p class="legal">© 2026 Cosmos Nearby. Tickets are non-refundable within 24 hours of the lecture. Privacy policy · Terms of sale.</p>
+    <label class="theme-switch" for="theme-toggle">Switch light / dark theme</label>
+  </footer>
+</body>
+</html>
